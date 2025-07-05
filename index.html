@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-comptible"content="ie=edge">
+    <title>So o começo prr!!</title>
+    <Style>
+        body{
+        
+            margin: 1000;                /* remove margens padrão do navegador */
+            padding: 1000;               /* remove espaçamento padrão */
+            height: 1000;            /* faz o body ter a altura da tela */
+            background-image: url('https://assets.goal.com/images/v3/bltddebf31d6255f433/08f53bce49a27333bd2922440e8247d2869508eb.jpg?format=pjpg&auto=webp&width=3840&quality=60');
+            background-size: auto;   /* faz a imagem cobrir toda a tela */
+            background-position: auto; /* centraliza a imagem */
+            background-repeat: no-repeat; /* evita repetição */
+
+    
+           }   
+    
+       
+    </Style>
+</head>
+<body>
+    <style>
+        body{
+color: rgb(255, 255, 255) ;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: large;
+text-align: start;
+        }   
+    </style>
+    <script>
+        var nome = window.prompt(' Qual o seu nome ?')
+        window.alert(' Obrigado por confia em mim  ' +nome+ '')
+       document.write(' Opa, e ai '+ nome+' como vc esta ?<br/> ')
+        document.write(nome+' esse é um site que eu estou fazendo aos poucos <br/>'
+      +' Mais e ai ' +nome+ ' oque vc achou  <br/> '
+        + ' Pra alguem iniciante que esta começando do zero e sem ajuda? ') 
+       
+  
+ /*Exemplo:
+ <p1>
+Apa, e ai  como vc esta <br/>
+esse é um site que eu estou fazendo aos poucos<br/>
+mais e ai oque vc achou desse projeto<br/>
+pra alguem iniciante que esta começando do zero sem ajuda<br/>
+</p1.
+o <br/> serve para vc pula linhas caso vc esteja escrevendo em um paragrafo ou titulo 
+*/
+</script>
+
+  <!-- Caixinha de opinião -->
+  <p>Deixe sua opinião abaixo, <span id="nome"></span>:</p>
+  <textarea id="opiniao" placeholder="Escreva sua opinião aqui..." rows="4" cols="50"></textarea><br>
+  <button onclick="mostrarOpiniao()">Enviar opinião</button>
+
+  <!-- Local para mostrar a opinião -->
+  <p>Sua opinião: <span id="resposta"></span></p>
+
+  <script>
+    // Colocar o nome do usuário no parágrafo
+    document.getElementById('nome').textContent = nome;
+
+    function mostrarOpiniao() {
+      let opiniao = document.getElementById('opiniao').value;
+      document.getElementById('resposta').textContent = opiniao;
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    .container {
+      background: rgb(255, 0, 0);
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    textarea {
+      width: 30%;
+      padding: 10px;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      resize: vertical;
+      font-size: 16px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    textarea:focus {
+      border-color: #000000;
+      outline: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #000000;
+      color: rgb(253, 253, 253);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffffff;
+    }
+
+    .resposta {
+      margin-top: 20px;
+      background-color: #f70000;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 5px solid #ff0000;
+      font-style: italic #0000;
+      width: 10px;
+    }
+  </style>
+ </script>
+</body>
+</html>
+https://github.com/drey71/star.dev1.git
